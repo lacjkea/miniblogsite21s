@@ -1,0 +1,58 @@
+* {
+  /* padding: 0;
+  margin: 0; */
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
+
+main > article {
+  border-radius: 12px;
+  background: greenyellow;
+  padding: 1rem;
+}
+
+h5 {
+  text-align: right;
+}
+
+/* form */
+
+input {
+  display: block;
+}
+
+input[type="submit" i] {
+  cursor: pointer;
+  background: green;
+  border: 0;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+input[type="submit" i]:hover {
+  background: greenyellow;
+  /* transform: scale(1.2) rotate(-30deg) translateX(100px) translateY(-100px); */
+  transform: scale(1.2) rotate(30deg);
+}
+
+input[type="submit" i]:disabled {
+  cursor: pointer;
+  background: red;
+}
+
+textarea {
+  width: calc(100% - 2rem);
+  min-height: 3rem;
+  background: hotpink;
+  margin: 1rem;
+}

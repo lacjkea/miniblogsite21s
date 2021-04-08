@@ -5,17 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
       <ul>
         <li><a href="index.html">home</a></li>
+        <li><a href="post-suggestion.html">New post</a></li>
       </ul>
     </nav>
     <main></main>
     <h1></h1>
     <h2>by <span></span></h2>
     <p></p>
+    <section class="comments-section">
+      <ul></ul>
+    </section>
+    <template class="comment">
+      <li>
+        <h3>username</h3>
+        <p>comment</p>
+      </li>
+    </template>
+    <form action="">
+      <fieldset id="forms__input">
+        <legend>Input fields</legend>
+        <p>
+          <label for="username">Username</label>
+          <input id="username" type="text" placeholder="superman" />
+        </p>
+        <p>
+          <label for="emailaddress">Email Address</label>
+          <input id="emailaddress" type="email" placeholder="name@email.com" />
+        </p>
+        <p>
+          <label for="commenttext">Yuor comment</label>
+          <textarea
+            id="commenttext"
+            placeholder="What do you really think?"
+          ></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Submit your comment" />
+        </p>
+        <!-- https://html.com/attributes/button-type/#:~:text=a%20button%20explicitly.-,Difference%20between%20and%20%3C,it%20is%20a%20null%20element). -->
+      </fieldset>
+    </form>
     <script src="article.js"></script>
   </body>
 </html>
